@@ -508,10 +508,6 @@ a {
    About
    ========================================================= */
 
-.about {
-    border-bottom: none;
-}
-
 .about-content {
     padding-left: 60px;
 
@@ -529,6 +525,125 @@ a {
 
 .about-content p:last-child {
     margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Contact
+   ========================================================= */
+
+.contact {
+    border-bottom: none;
+}
+
+.contact-content {
+    padding-left: 60px;
+
+    max-width: 760px;
+}
+
+.contact-content p {
+    margin: 0 0 22px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-email {
+    color: var(--text);
+
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    overflow-wrap: anywhere;
+
+    border-bottom: 1px solid var(--border-hover);
+
+    transition:
+            color 0.15s ease,
+            border-color 0.15s ease;
+}
+
+.contact-email:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+button.button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.copy-status {
+    min-height: 22px;
+
+    margin: 14px 0 0 !important;
+
+    color: var(--accent) !important;
+
+    font-size: 12px !important;
+}
+
+
+/* =========================================================
+   Accessibility
+   ========================================================= */
+
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: -60px;
+
+    padding: 8px 14px;
+
+    border-radius: 5px;
+
+    background: var(--accent);
+    color: #07100b;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    z-index: 10;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+
+html {
+    scroll-padding-top: 16px;
+}
+
+::selection {
+    background: var(--accent);
+    color: #07100b;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        transition: none !important;
+    }
 }
 
 
@@ -652,7 +767,8 @@ a {
         border-top: 1px solid var(--border);
     }
 
-    .about-content {
+    .about-content,
+    .contact-content {
         padding-left: 45px;
     }
 
@@ -716,7 +832,8 @@ a {
         gap: 2px;
     }
 
-    .about-content {
+    .about-content,
+    .contact-content {
         padding-left: 35px;
     }
 }
