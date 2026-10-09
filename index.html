@@ -13,12 +13,16 @@
             content="Metrix31 Labs - Independent software development and open-source projects."
     >
 
+    <meta name="theme-color" content="#0b0d0c">
+
     <title>Metrix31 Labs</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
 <div class="site">
 
@@ -51,6 +55,10 @@
                     GitHub
                 </a>
 
+                <a href="#contact">
+                    Contact
+                </a>
+
             </nav>
 
         </div>
@@ -60,7 +68,7 @@
 
     <!-- Main -->
 
-    <main>
+    <main id="main">
 
         <!-- Introduction -->
 
@@ -95,6 +103,13 @@
                         href="#openforge"
                 >
                     OpenForge
+                </a>
+
+                <a
+                        class="button button-secondary"
+                        href="#contact"
+                >
+                    Contact
                 </a>
 
             </div>
@@ -453,6 +468,70 @@
 
         </section>
 
+        <!-- Contact -->
+
+        <section
+                id="contact"
+                class="section contact"
+        >
+
+            <div class="section-header">
+
+                <span class="section-number">
+                    04
+                </span>
+
+                <div>
+                    <p class="section-label">
+                        Get in touch
+                    </p>
+
+                    <h2>
+                        Contact
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="contact-content">
+
+                <p>
+                    Questions, feedback or ideas for a collaboration?
+                    Send an email.
+                </p>
+
+                <div class="contact-row">
+
+                    <a
+                            class="contact-email"
+                            href="mailto:Metrix31Labs@proton.me"
+                    >
+                        Metrix31Labs@proton.me
+                    </a>
+
+                    <button
+                            class="button button-secondary"
+                            type="button"
+                            id="copy-email"
+                            data-email="Metrix31Labs@proton.me"
+                    >
+                        Copy address
+                    </button>
+
+                </div>
+
+                <p
+                        class="copy-status"
+                        id="copy-status"
+                        role="status"
+                        aria-live="polite"
+                ></p>
+
+            </div>
+
+        </section>
+
     </main>
 
 
@@ -484,6 +563,10 @@
                     OpenForge
                 </a>
 
+                <a href="#contact">
+                    Contact
+                </a>
+
             </div>
 
             <div class="footer-copy">
@@ -495,6 +578,32 @@
     </footer>
 
 </div>
+
+<script>
+    (function () {
+        var button = document.getElementById("copy-email");
+        var status = document.getElementById("copy-status");
+        if (!button) return;
+
+        button.addEventListener("click", function () {
+            var email = button.dataset.email;
+
+            function done(message) {
+                status.textContent = message;
+                setTimeout(function () { status.textContent = ""; }, 2500);
+            }
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(
+                    function () { done("Address copied."); },
+                    function () { done("Copy failed. Please copy it manually."); }
+                );
+            } else {
+                done("Copy failed. Please copy it manually.");
+            }
+        });
+    })();
+</script>
 
 </body>
 </html>
