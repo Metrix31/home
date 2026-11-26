@@ -2,18 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-            name="description"
-            content="Metrix31 Labs - Independent software development and open-source projects."
-    >
-
-    <meta name="theme-color" content="#0b0d0c">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metrix31 Labs - Independent software development and open-source projects.">
+    <meta name="theme-color" content="#000412">
 
     <title>Metrix31 Labs</title>
 
@@ -22,514 +13,291 @@
 
 <body>
 
-<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <div class="site">
 
     <!-- Header -->
 
-    <header class="header">
+    <header class="header" id="header">
+        <div class="container header-inner">
 
-        <div class="header-inner">
-
-            <a href="#" class="logo">
+            <a href="#" class="logo" aria-label="Metrix31 Labs, back to top">
                 <span class="logo-mark">M</span>
                 <span>Metrix31 Labs</span>
             </a>
 
-            <nav class="navigation">
-
-                <a href="#openforge">
-                    OpenForge
-                </a>
-
-                <a href="#projects">
-                    Projects
-                </a>
-
-                <a
-                        href="https://github.com/Metrix31"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
+            <nav class="navigation" aria-label="Main">
+                <a href="#openforge">OpenForge</a>
+                <a href="#projects">Projects</a>
+                <a href="https://github.com/Metrix31" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="button button-primary button-small" href="#contact">Contact</a>
             </nav>
 
         </div>
-
     </header>
 
 
-    <!-- Main -->
-
     <main id="main">
 
-        <!-- Introduction -->
+        <!-- Hero -->
 
-        <section class="intro">
+        <section class="hero">
+            <div class="container hero-inner">
 
-            <p class="eyebrow">
-                Independent software development
-            </p>
+                <div class="hero-content">
 
-            <h1>
-                Metrix31 Labs
-            </h1>
+                    <p class="hero-badge">Independent software development</p>
 
-            <p class="intro-text">
-                Independent software development focused on useful,
-                accessible, and open technology.
-            </p>
+                    <h1>Metrix31 Labs</h1>
 
-            <div class="intro-links">
+                    <p class="hero-text">
+                        Independent software development focused on useful,
+                        accessible, and open technology.
+                    </p>
 
-                <a
-                        class="button button-primary"
-                        href="https://github.com/Metrix31"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
+                    <div class="hero-actions">
+                        <a class="button button-primary"
+                           href="https://github.com/Metrix31"
+                           target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                        <a class="button button-secondary" href="#openforge">OpenForge</a>
+                        <a class="button button-secondary" href="#contact">Contact</a>
+                    </div>
 
-                <a
-                        class="button button-secondary"
-                        href="#openforge"
-                >
-                    OpenForge
-                </a>
+                </div>
 
-                <a
-                        class="button button-secondary"
-                        href="#contact"
-                >
-                    Contact
+                <a class="hero-release"
+                   href="https://metrix31.github.io/VaultForge/"
+                   target="_blank" rel="noopener noreferrer">
+                    <span class="hero-release-label">Latest release</span>
+                    <strong>VaultForge</strong>
+                    <span class="hero-release-text">
+                        Open-source password manager focused on strong encryption and user control.
+                    </span>
+                    <span class="hero-release-arrow" aria-hidden="true">↗</span>
                 </a>
 
             </div>
-
         </section>
 
 
-        <!-- OpenForge -->
+        <!-- OpenForge (hell) -->
 
-        <section
-                id="openforge"
-                class="section"
-        >
+        <section id="openforge" class="section section-light">
+            <div class="container section-grid">
 
-            <div class="section-header">
-
-                <span class="section-number">
-                    01
-                </span>
-
-                <div>
-                    <p class="section-label">
-                        Initiative
-                    </p>
-
-                    <h2>
-                        OpenForge
-                    </h2>
+                <div class="section-head">
+                    <h2>OpenForge</h2>
+                    <p class="section-note">Open-source initiative by Metrix31 Labs.</p>
                 </div>
 
-            </div>
+                <div class="section-body">
 
+                    <p class="openforge-slogan">Build Free. Break Limits.</p>
 
-            <div class="openforge">
-
-                <div class="openforge-main">
-
-                    <p class="openforge-slogan">
-                        Build Free. Break Limits.
-                    </p>
-
-                    <p>
+                    <p class="openforge-text">
                         OpenForge is an open-source initiative by
                         Metrix31 Labs. It focuses on building
                         independent alternatives to restrictive,
                         expensive, or unnecessarily closed software.
                     </p>
 
+                    <dl class="openforge-details">
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>Open Source</dd>
+                        </div>
+                        <div>
+                            <dt>Goal</dt>
+                            <dd>Digital Freedom</dd>
+                        </div>
+                        <div>
+                            <dt>License</dt>
+                            <dd>Apache 2.0</dd>
+                        </div>
+                    </dl>
+
+                    <a class="button button-primary"
+                       href="https://github.com/Metrix31/OpenForge"
+                       target="_blank" rel="noopener noreferrer">
+                        View OpenForge on GitHub <span aria-hidden="true">↗</span>
+                    </a>
+
                 </div>
-
-
-                <div class="openforge-details">
-
-                    <div>
-                        <span>Focus</span>
-                        <strong>Open Source</strong>
-                    </div>
-
-                    <div>
-                        <span>Goal</span>
-                        <strong>Digital Freedom</strong>
-                    </div>
-
-                    <div>
-                        <span>License</span>
-                        <strong>Apache 2.0</strong>
-                    </div>
-
-                </div>
-
-
-                <a
-                        class="project-link"
-                        href="https://github.com/Metrix31/OpenForge"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    View OpenForge on GitHub
-                    <span>↗</span>
-                </a>
 
             </div>
-
         </section>
 
 
         <!-- Projects -->
 
-        <section
-                id="projects"
-                class="section"
-        >
+        <section id="projects" class="section">
+            <div class="container section-grid">
 
-            <div class="section-header">
+                <div class="section-head">
+                    <h2>Projects</h2>
+                    <p class="section-note">Software and experiments, built independently.</p>
+                </div>
 
-                <span class="section-number">
-                    02
-                </span>
+                <div class="section-body project-list">
 
-                <div>
-                    <p class="section-label">
-                        Selected work
-                    </p>
+                    <a class="project"
+                       href="https://metrix31.github.io/VaultForge/"
+                       target="_blank" rel="noopener noreferrer">
+                        <div class="project-content">
+                            <h3>VaultForge</h3>
+                            <p>
+                                Open-source password manager focused on
+                                strong encryption and user control.
+                            </p>
+                        </div>
+                        <span class="status released">Released</span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
 
-                    <h2>
-                        Projects
-                    </h2>
+                    <a class="project"
+                       href="https://metrix31.github.io/SiPy-Web"
+                       target="_blank" rel="noopener noreferrer">
+                        <div class="project-content">
+                            <h3>SiPy</h3>
+                            <p>
+                                A Python-related project and development
+                                experiment.
+                            </p>
+                        </div>
+                        <span class="status">Project</span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="project"
+                       href="https://metrix31.github.io/Project-Vectoria/"
+                       target="_blank" rel="noopener noreferrer">
+                        <div class="project-content">
+                            <h3>Project Vectoria</h3>
+                            <p>
+                                An independent project exploring software
+                                and interactive development.
+                            </p>
+                        </div>
+                        <span class="status">Project</span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="project"
+                       href="https://metrix31.github.io/allgemeinwissen-quiz"
+                       target="_blank" rel="noopener noreferrer">
+                        <div class="project-content">
+                            <h3>Allgemeinwissen Quiz</h3>
+                            <p>
+                                A browser-based quiz for testing general
+                                knowledge.
+                            </p>
+                        </div>
+                        <span class="status">Project</span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="project"
+                       href="https://metrix31.github.io/square_dodge"
+                       target="_blank" rel="noopener noreferrer">
+                        <div class="project-content">
+                            <h3>Square Dodge</h3>
+                            <p>
+                                A small browser game built around simple
+                                and fast gameplay.
+                            </p>
+                        </div>
+                        <span class="status">Project</span>
+                        <span class="arrow" aria-hidden="true">↗</span>
+                    </a>
+
                 </div>
 
             </div>
-
-
-            <div class="project-list">
-
-
-                <a
-                        class="project"
-                        href="https://metrix31.github.io/VaultForge/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-
-                    <div class="project-index">
-                        01
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-title-row">
-
-                            <h3>
-                                VaultForge
-                            </h3>
-
-                            <span class="status released">
-                                Released
-                            </span>
-
-                        </div>
-
-                        <p>
-                            Open-source password manager focused on
-                            strong encryption and user control.
-                        </p>
-
-                    </div>
-
-                    <span class="arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                        class="project"
-                        href="https://metrix31.github.io/SiPy-Web"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-
-                    <div class="project-index">
-                        02
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-title-row">
-
-                            <h3>
-                                SiPy
-                            </h3>
-
-                            <span class="status">
-                                Project
-                            </span>
-
-                        </div>
-
-                        <p>
-                            A Python-related project and development
-                            experiment.
-                        </p>
-
-                    </div>
-
-                    <span class="arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                        class="project"
-                        href="https://metrix31.github.io/Project-Vectoria/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-
-                    <div class="project-index">
-                        03
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-title-row">
-
-                            <h3>
-                                Project Vectoria
-                            </h3>
-
-                            <span class="status">
-                                Project
-                            </span>
-
-                        </div>
-
-                        <p>
-                            An independent project exploring software
-                            and interactive development.
-                        </p>
-
-                    </div>
-
-                    <span class="arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                        class="project"
-                        href="https://metrix31.github.io/allgemeinwissen-quiz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-
-                    <div class="project-index">
-                        04
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-title-row">
-
-                            <h3>
-                                Allgemeinwissen Quiz
-                            </h3>
-
-                            <span class="status">
-                                Project
-                            </span>
-
-                        </div>
-
-                        <p>
-                            A browser-based quiz for testing general
-                            knowledge.
-                        </p>
-
-                    </div>
-
-                    <span class="arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-                <a
-                        class="project"
-                        href="https://metrix31.github.io/square_dodge"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-
-                    <div class="project-index">
-                        05
-                    </div>
-
-                    <div class="project-content">
-
-                        <div class="project-title-row">
-
-                            <h3>
-                                Square Dodge
-                            </h3>
-
-                            <span class="status">
-                                Project
-                            </span>
-
-                        </div>
-
-                        <p>
-                            A small browser game built around simple
-                            and fast gameplay.
-                        </p>
-
-                    </div>
-
-                    <span class="arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-            </div>
-
         </section>
 
 
         <!-- About -->
 
-        <section class="section about">
+        <section id="about" class="section">
+            <div class="container section-grid">
 
-            <div class="section-header">
+                <div class="section-head">
+                    <h2>About</h2>
+                    <p class="section-note">The idea behind the work.</p>
+                </div>
 
-                <span class="section-number">
-                    03
-                </span>
+                <div class="section-body">
 
-                <div>
-                    <p class="section-label">
-                        About
+                    <p class="section-lead">
+                        Metrix31 Labs is an independent development
+                        initiative focused on software, open-source
+                        projects, and experimentation with new
+                        technologies.
                     </p>
 
-                    <h2>
-                        Metrix31 Labs
-                    </h2>
+                    <p class="section-lead">
+                        Through OpenForge, the focus extends to creating
+                        practical alternatives that give users more
+                        choice, transparency, and control over the
+                        software they use.
+                    </p>
+
                 </div>
 
             </div>
-
-
-            <div class="about-content">
-
-                <p>
-                    Metrix31 Labs is an independent development
-                    initiative focused on software, open-source
-                    projects, and experimentation with new
-                    technologies.
-                </p>
-
-                <p>
-                    Through OpenForge, the focus extends to creating
-                    practical alternatives that give users more
-                    choice, transparency, and control over the
-                    software they use.
-                </p>
-
-            </div>
-
         </section>
+
 
         <!-- Contact -->
 
-        <section
-                id="contact"
-                class="section contact"
-        >
+        <section id="contact" class="section contact">
+            <div class="container section-grid">
 
-            <div class="section-header">
+                <div class="section-head">
+                    <h2>Contact</h2>
+                    <p class="section-note">Email is the best way to reach us.</p>
+                </div>
 
-                <span class="section-number">
-                    04
-                </span>
+                <div class="section-body">
 
-                <div>
-                    <p class="section-label">
-                        Get in touch
-                    </p>
+                    <div class="contact-panel">
 
-                    <h2>
-                        Contact
-                    </h2>
+                        <p class="contact-label">
+                            Questions, feedback or ideas for a collaboration?
+                        </p>
+
+                        <a class="contact-email" href="mailto:Metrix31Labs@proton.me">
+                            Metrix31Labs@proton.me
+                        </a>
+
+                        <div class="contact-actions">
+
+                            <a class="button button-primary" href="mailto:Metrix31Labs@proton.me">
+                                Send email
+                            </a>
+
+                            <button class="button button-secondary"
+                                    type="button"
+                                    id="copy-email"
+                                    data-email="Metrix31Labs@proton.me">
+                                Copy address
+                            </button>
+
+                        </div>
+
+                        <p class="copy-status"
+                           id="copy-status"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </div>
+
                 </div>
 
             </div>
-
-
-            <div class="contact-content">
-
-                <p>
-                    Questions, feedback or ideas for a collaboration?
-                    Send an email.
-                </p>
-
-                <div class="contact-row">
-
-                    <a
-                            class="contact-email"
-                            href="mailto:Metrix31Labs@proton.me"
-                    >
-                        Metrix31Labs@proton.me
-                    </a>
-
-                    <button
-                            class="button button-secondary"
-                            type="button"
-                            id="copy-email"
-                            data-email="Metrix31Labs@proton.me"
-                    >
-                        Copy address
-                    </button>
-
-                </div>
-
-                <p
-                        class="copy-status"
-                        id="copy-status"
-                        role="status"
-                        aria-live="polite"
-                ></p>
-
-            </div>
-
         </section>
 
     </main>
@@ -538,49 +306,67 @@
     <!-- Footer -->
 
     <footer class="footer">
+        <div class="container footer-inner">
 
-        <div class="footer-inner">
-
-            <div class="footer-brand">
-                Metrix31 Labs
-            </div>
+            <div class="footer-brand">Metrix31 Labs</div>
 
             <div class="footer-links">
-
-                <a
-                        href="https://github.com/Metrix31"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                <a
-                        href="https://github.com/Metrix31/OpenForge"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >
-                    OpenForge
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
+                <a href="https://github.com/Metrix31" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Metrix31/OpenForge" target="_blank" rel="noopener noreferrer">OpenForge</a>
+                <a href="#contact">Contact</a>
             </div>
 
-            <div class="footer-copy">
-                © 2026 Metrix31 Labs
-            </div>
+            <div class="footer-copy">© 2026 Metrix31 Labs</div>
 
         </div>
-
     </footer>
 
 </div>
 
 <script>
     (function () {
+
+        /* Header: Linie erst nach dem Scrollen */
+        var header = document.getElementById("header");
+
+        function onScroll() {
+            header.classList.toggle("is-scrolled", window.scrollY > 8);
+        }
+
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+
+        /* Navigation: aktuelle Sektion markieren */
+        if ("IntersectionObserver" in window) {
+            var links = {};
+
+            document.querySelectorAll('.navigation a[href^="#"]').forEach(function (a) {
+                links[a.getAttribute("href").slice(1)] = a;
+            });
+
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+
+                    Object.keys(links).forEach(function (id) {
+                        links[id].removeAttribute("aria-current");
+                    });
+
+                    var link = links[entry.target.id];
+                    if (link && !link.classList.contains("button")) {
+                        link.setAttribute("aria-current", "true");
+                    }
+                });
+            }, { rootMargin: "-40% 0px -55% 0px" });
+
+            document.querySelectorAll("main section[id]").forEach(function (section) {
+                observer.observe(section);
+            });
+        }
+
+
+        /* E-Mail kopieren */
         var button = document.getElementById("copy-email");
         var status = document.getElementById("copy-status");
         if (!button) return;
@@ -602,6 +388,7 @@
                 done("Copy failed. Please copy it manually.");
             }
         });
+
     })();
 </script>
 
